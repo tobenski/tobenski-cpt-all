@@ -20,7 +20,7 @@ function tobenski_homebox_custom_post_type() {
             'has_archive' => false,
             'menu_position' => 8,
             'supports' => array(
-                'title', 'editor', 'page-attributes'
+                'title', 'editor', 'page-attributes',
             )
         )
     );

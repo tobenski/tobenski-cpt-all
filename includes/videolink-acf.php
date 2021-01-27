@@ -13,7 +13,7 @@ function tobenski_add_videolink_acf_group()
                     'key' => 'tobenski_600329940ef6d',
                     'label' => 'Video Link',
                     'name' => 'video_link',
-                    'type' => 'url',
+                    'type' => 'file',
                     'instructions' => 'Link til baggrundsvideoen, hvis den bruges på denne side.',
                     'required' => 0,
                     'conditional_logic' => 0,
@@ -22,9 +22,13 @@ function tobenski_add_videolink_acf_group()
                         'class' => '',
                         'id' => '',
                     ),
-                    'default_value' => 'https://detgamleposthusvideo.s3.eu-north-1.amazonaws.com/front.mp4',
-                    'placeholder' => '',
+                    'return_format' => 'url',
+                    'library' => 'all',
+                    'min_size' => '',
+                    'max_size' => '',
+                    'mime_types' => 'mp4',
                 ),
+
             ),
             'location' => array(
                 array(
