@@ -18,7 +18,6 @@ function tobenski_add_custom_post_types() {
     tobenski_event_custom_post_type();
     tobenski_menu_custom_post_type();
     tobenski_catering_custom_post_type();
-    tobenski_homebox_custom_post_type();
     tobenski_bestilling_custom_post_type();
 }
 
@@ -42,8 +41,3 @@ add_action( 'acf/init', 'tobenski_create_acfs');
 // Required Plugins.
 add_action( 'tgmpa_register', 'tobenski_register_required_plugins' );
 
-// SKAL REFCTORS TIL ACF i stedet for hjemmelavet metabox. EVT bare brug CTA group.
-// Men det kræver ændreing i front-page.php i theme
-/* Fire our meta box setup function on the post editor screen. */
-add_action( 'load-post.php', 'tobenski_homebox_meta_boxes_setup' );
-add_action( 'load-post-new.php', 'tobenski_homebox_meta_boxes_setup' );
