@@ -2,7 +2,7 @@
 /*
 Plugin Name: Tobenski - Custom Post Types for Det Gamle Posthus Website
 Plugin URI: https://github.com/tobenski/dgpplugin
-Description: Plugin to crete the Custom Post Types use in the Tobenski DGP Theme.
+Description: Plugin to create the Custom Post Types use in the Tobenski DGP Theme.
 Version: 1.0.0
 Author: Knud Rishøj
 Author URI: https://tobenski.dk
@@ -15,8 +15,6 @@ foreach(glob( plugin_dir_path( __FILE__ ) . "includes/*.php") as $file) {
 }
 
 function tobenski_add_custom_post_types() {
-    tobenski_deli_custom_post_type();
-    //tobenski_take_away_custom_post_type(); // Moved to tobenski-take-away plugin.
     tobenski_event_custom_post_type();
     tobenski_menu_custom_post_type();
     tobenski_catering_custom_post_type();
