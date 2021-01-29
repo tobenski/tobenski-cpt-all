@@ -14,10 +14,6 @@ foreach(glob( plugin_dir_path( __FILE__ ) . "includes/*.php") as $file) {
     include_once $file;
 }
 
-function tobenski_add_custom_post_types() {
-    tobenski_bestilling_custom_post_type();
-}
-
 function tobenski_create_acfs() {
     tobenski_add_videolink_acf_group();
     tobenski_add_cta_acf_group();
@@ -26,7 +22,6 @@ function tobenski_create_acfs() {
 }
 
 
-add_action( 'init', 'tobenski_add_custom_post_types', 10 );
 add_action( 'acf/init', 'tobenski_create_acfs');
 
 // Required Plugins.
