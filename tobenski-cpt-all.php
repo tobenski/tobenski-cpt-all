@@ -17,7 +17,6 @@ foreach(glob( plugin_dir_path( __FILE__ ) . "includes/*.php") as $file) {
 function tobenski_create_acfs() {
     tobenski_add_videolink_acf_group();
     tobenski_add_cta_acf_group();
-    tobenski_add_sitcky_acf_group();
     tobenski_setup_acf_options();
 }
 
