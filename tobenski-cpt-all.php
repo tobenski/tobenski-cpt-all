@@ -15,13 +15,11 @@ foreach(glob( plugin_dir_path( __FILE__ ) . "includes/*.php") as $file) {
 }
 
 function tobenski_add_custom_post_types() {
-    tobenski_menu_custom_post_type();
     tobenski_catering_custom_post_type();
     tobenski_bestilling_custom_post_type();
 }
 
 function tobenski_create_taxonomys() {
-    create_tobenski_types_hierarchical_taxonomy();
     tobenski_catering_type_taxonomy();
 }
 
