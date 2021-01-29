@@ -15,12 +15,7 @@ foreach(glob( plugin_dir_path( __FILE__ ) . "includes/*.php") as $file) {
 }
 
 function tobenski_add_custom_post_types() {
-    tobenski_catering_custom_post_type();
     tobenski_bestilling_custom_post_type();
-}
-
-function tobenski_create_taxonomys() {
-    tobenski_catering_type_taxonomy();
 }
 
 function tobenski_create_acfs() {
@@ -31,7 +26,6 @@ function tobenski_create_acfs() {
 }
 
 
-add_action( 'init', 'tobenski_create_taxonomys', 0 );
 add_action( 'init', 'tobenski_add_custom_post_types', 10 );
 add_action( 'acf/init', 'tobenski_create_acfs');
 
